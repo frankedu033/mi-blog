@@ -1,0 +1,590 @@
+/* Fuentes Locales */
+@font-face {
+    font-family: 'Pacifico';
+    src: url("fuentes/Pacifico/Pacifico-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url("fuentes/Caveat/Caveat-Regular.ttf") format('truetype');
+}
+
+/* Estilos para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+    background-color: #fff8e7;
+    color: #4a2c2a; 
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px; /* Espacio para el footer fijo */
+}
+
+/* Encabezado */
+header {
+    background-color: #5e2c24; 
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: #ffe5dc;
+}
+
+header p {
+    font-size: 18px;
+    color: #f4d6cd;
+}
+
+/* Navegación */
+nav {
+    background-color: #a35d45;
+    text-align: center;
+    padding: 16px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffe5dc;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 32px;
+}
+
+/* ===== ESTILOS PARA INDEX.HTML ===== */
+/* Secciones */
+section {
+    margin-bottom: 48px;
+    padding: 20px;
+    background-color: #fff3ec;
+    border-radius: 8px;
+    border: 1px solid #e5b9aa;
+}
+
+section h2 {
+    color: #a35d45;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Video */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== ESTILOS PARA PRODUCTOS.HTML ===== */
+/* Galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.producto {
+    flex: 1 1 calc(33.333% - 32px);
+    background-color: #fff3ec;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e5b9aa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.producto p {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== ESTILOS PARA CONTACTO.HTML ===== */
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #fff3ec;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #e5b9aa;
+    margin-bottom: 32px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d4a89c;
+    border-radius: 5px;
+    font-family: 'Caveat', cursive;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #a35d45;
+    box-shadow: 0 0 5px rgba(163, 93, 69, 0.3);
+}
+
+button {
+    background-color: #a35d45;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Caveat', cursive;
+}
+
+button:hover {
+    background-color: #8c4c3a;
+}
+
+/* Información de contacto */
+.info {
+    margin-top: 32px;
+    font-size: 18px;
+    background-color: #fff3ec;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5b9aa;
+}
+
+.info h2 {
+    color: #a35d45;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.info p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Mapa */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+
+/* ===== ESTILOS COMPARTIDOS ===== */
+/* Pie de página */
+footer {
+    background-color: #5e2c24;
+    color: #ffd4c2;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contador del carrito */
+.contador-carrito {
+    margin-left: 10px;
+    background-color: #ffe5dc;
+    color: #5e2c24;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Notificaciones */
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a35d45;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Testimonios */
+.testimonio-activo {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+    border: 2px solid #e5b9aa;
+}
+.testimonio-texto {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.testimonio-autor {
+    font-weight: bold;
+    color: #a35d45;
+}
+.testimonio-rating {
+    margin: 10px 0;
+    color: #ffd700;
+}
+.controles-testimonios {
+    text-align: center;
+}
+.controles-testimonios button {
+    background: #a35d45;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+.controles-testimonios button:hover {
+    background: #5e2c24;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    header h1 {
+        font-size: 28px;
+    }
+    
+    section h2, .info h2 {
+        font-size: 28px;
+    }
+    
+    section p, .info p {
+        font-size: 18px;
+    }
+    
+    video, iframe {
+        width: 100% !important;
+        height: auto;
+    }
+    
+    .producto {
+        flex: 1 1 calc(50% - 32px);
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    section h2, .info h2 {
+        font-size: 24px;
+    }
+    
+    section p, .info p {
+        font-size: 16px;
+    }
+    
+    .producto {
+        flex: 1 1 100%;
+    }
+    
+    iframe {
+        height: 300px;
+    }
+}
+JavaScript Actualizado (script.js) - Versión Completa
+javascript
+// script.js - Código para TODAS las páginas
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // ===== CÓDIGO PARA PRODUCTOS.HTML =====
+    // Solo ejecutar si estamos en la página de productos
+    if (document.querySelector('.galeria')) {
+        // Inicializar carrito
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        
+        // Añadir evento a cada producto
+        const productos = document.querySelectorAll('.producto');
+        
+        productos.forEach(producto => {
+            producto.addEventListener('click', function() {
+                const nombre = this.querySelector('p').textContent;
+                const imagen = this.querySelector('img').src;
+                
+                // Añadir al carrito
+                añadirAlCarrito(nombre, imagen);
+                
+                // Mostrar confirmación
+                mostrarConfirmacion(`${nombre} añadido al carrito`);
+            });
+        });
+        
+        // Función para añadir productos al carrito
+        function añadirAlCarrito(nombre, imagen) {
+            const productoExistente = carrito.find(item => item.nombre === nombre);
+            
+            if (productoExistente) {
+                productoExistente.cantidad += 1;
+            } else {
+                carrito.push({
+                    nombre: nombre,
+                    imagen: imagen,
+                    cantidad: 1
+                });
+            }
+            
+            // Guardar en localStorage
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            
+            // Actualizar contador del carrito
+            actualizarContadorCarrito();
+        }
+        
+        // Inicializar contador al cargar la página
+        actualizarContadorCarrito();
+    }
+    
+    // ===== CÓDIGO PARA INDEX.HTML =====
+    // Solo ejecutar si estamos en la página de inicio
+    if (document.querySelector('main') && document.querySelector('main section:first-child h2') && 
+        document.querySelector('main section:first-child h2').textContent === 'Bienvenidos') {
+        
+        // Sistema de testimonios rotativos
+        const testimonios = [
+            {
+                nombre: "María González",
+                comentario: "¡Las mejores tortas de El Alto! Siempre pido para los cumpleaños de mis hijos.",
+                rating: 5
+            },
+            {
+                nombre: "Carlos López",
+                comentario: "Los cupcakes de frambuesa son increíbles. Mi esposa los ama.",
+                rating: 5
+            },
+            {
+                nombre: "Ana Martínez",
+                comentario: "Pedí una torta personalizada para mi boda y fue perfecta. ¡Gracias!",
+                rating: 5
+            }
+        ];
+
+        // Crear sección de testimonios
+        const seccionTestimonios = document.createElement('section');
+        seccionTestimonios.innerHTML = `
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonio-activo">
+                <p class="testimonio-texto"></p>
+                <p class="testimonio-autor"></p>
+                <div class="testimonio-rating"></div>
+            </div>
+            <div class="controles-testimonios">
+                <button id="anterior-testimonio">‹</button>
+                <button id="siguiente-testimonio">›</button>
+            </div>
+        `;
+        
+        // Insertar después de la última sección
+        const main = document.querySelector('main');
+        main.appendChild(seccionTestimonios);
+
+        let testimonioActual = 0;
+
+        function mostrarTestimonio(index) {
+            const testimonio = testimonios[index];
+            const texto = document.querySelector('.testimonio-texto');
+            const autor = document.querySelector('.testimonio-autor');
+            const rating = document.querySelector('.testimonio-rating');
+            
+            texto.textContent = `"${testimonio.comentario}"`;
+            autor.textContent = `- ${testimonio.nombre}`;
+            rating.innerHTML = '★'.repeat(testimonio.rating) + '☆'.repeat(5 - testimonio.rating);
+        }
+
+        // Event listeners para controles
+        document.getElementById('siguiente-testimonio').addEventListener('click', function() {
+            testimonioActual = (testimonioActual + 1) % testimonios.length;
+            mostrarTestimonio(testimonioActual);
+        });
+
+        document.getElementById('anterior-testimonio').addEventListener('click', function() {
+            testimonioActual = (testimonioActual - 1 + testimonios.length) % testimonios.length;
+            mostrarTestimonio(testimonioActual);
+        });
+
+        // Mostrar primer testimonio
+        mostrarTestimonio(testimonioActual);
+
+        // Rotación automática cada 5 segundos
+        setInterval(function() {
+            testimonioActual = (testimonioActual + 1) % testimonios.length;
+            mostrarTestimonio(testimonioActual);
+        }, 5000);
+    }
+    
+    // ===== CÓDIGO PARA CONTACTO.HTML =====
+    // Solo ejecutar si estamos en la página de contacto
+    if (document.querySelector('.info') && document.querySelector('.info h2').textContent === 'Información de contacto') {
+        
+        // Crear formulario de contacto
+        const formulario = document.createElement('form');
+        formulario.innerHTML = `
+            <h2>Envíanos un mensaje</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <button type="submit">Enviar Mensaje</button>
+        `;
+        
+        // Insertar el formulario antes de la información
+        const infoSection = document.querySelector('.info');
+        document.querySelector('main').insertBefore(formulario, infoSection);
+        
+        // Manejar envío del formulario
+        formulario.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const mensaje = document.getElementById('mensaje').value;
+            
+            // Simular envío (en un caso real, aquí iría una petición AJAX)
+            mostrarConfirmacion(`¡Gracias ${nombre}! Tu mensaje ha sido enviado. Te contactaremos pronto.`);
+            
+            // Limpiar formulario
+            formulario.reset();
+        });
+    }
+    
+    // ===== FUNCIONES COMPARTIDAS =====
+    // Función para actualizar el contador del carrito (compartida)
+    function actualizarContadorCarrito() {
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+        
+        // Crear o actualizar el contador en el nav
+        let contador = document.querySelector('.contador-carrito');
+        
+        if (!contador) {
+            contador = document.createElement('span');
+            contador.className = 'contador-carrito';
+            document.querySelector('nav').appendChild(contador);
+        }
+        
+        contador.textContent = `(${totalItems})`;
+    }
+    
+    // Función para mostrar confirmación (compartida)
+    function mostrarConfirmacion(mensaje) {
+        const notificacion = document.createElement('div');
+        notificacion.textContent = mensaje;
+        notificacion.className = 'notificacion';
+        
+        document.body.appendChild(notificacion);
+        
+        // Remover después de 3 segundos
+        setTimeout(() => {
+            if (document.body.contains(notificacion)) {
+                document.body.removeChild(notificacion);
+            }
+        }, 3000);
+    }
+    
+    // Efecto de scroll suave para enlaces internos (compartido)
+    document.querySelectorAll('nav a').forEach(enlace => {
+        enlace.addEventListener('click', function(e) {
+            if (this.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const destino = document.querySelector(this.getAttribute('href'));
+                if (destino) {
+                    destino.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+    
+    // Inicializar contador del carrito en todas las páginas
+    actualizarContadorCarrito();
+});
